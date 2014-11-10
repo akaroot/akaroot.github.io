@@ -1,0 +1,8 @@
+@import url(bootstrap.min.css);             /*Bootstrap base CSS*/
+@import url(font-awesome.min.css);          /*Font awesome icon pack*/
+@import url(magnific-popup.css);            /*Responsive LightBox*/
+@import url(jquery.placeholder.css);        /*Placeholder fix*/
+@import url(perfect-scrollbar.css);         /*Custom Scrollbar*/
+@import url(animate.min.css);               /*CSS3 animations*/
+@import url(style.css);                     /*Template stylesheet*/
+ 
