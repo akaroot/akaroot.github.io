@@ -1,15 +1,475 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Mykola Baran - web developer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=http://akaroot.org.ua">
-        <script type="text/javascript">
-            window.location.href = "http://akaroot.org.ua"
-        </script>
-        <title>Page Redirection</title>
+
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <!-- /Mobile Specific Metas -->
+
+        <!--CSS styles-->
+        <link href='http://fonts.googleapis.com/css9816.css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/styles/default.css" id="theme-style">
+        <!--/CSS styles-->
+
+
+<!--Custom Styles-->
+        <link rel="stylesheet" href="css/custom-style.css">
+
+        <!--/Custom Styles-->
+
     </head>
     <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow the <a href='http://akaroot.org.ua'>link</a>
-    </body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="text-load">
+                <h2>
+                    Mykola Baran
+                    <span id="load-overlay"></span>
+                </h2>
+            </div>
+        </div>
+        <!-- Preloader -->
+
+        <!--Begin Main wrapper-->
+        <div id="body-wrapper">
+            <!--Begin section home-->
+            <section id="home" class="active">
+                <div class="inner-wrapper">
+                    <div class="contain">
+                        <!-- Background slider -->
+                        <div id="slider-container">
+                            <div id="bg-slider">
+                                  <div><img src="img/pricing-slider.jpg" alt="img"></div>
+
+                            </div>
+                        </div>
+                        <!-- /Background slider -->
+
+                        <!-- Slider Captions -->
+                        <div id="home-contents" class="contents">
+                            <div id="profile">
+                                <div class="name">
+                                    <h4>Hello my names is</h4>
+                                    <h1>Mykola Baran</h1>
+                                </div>
+                                <div id="caption-carousel">
+                                    <div class="caption">
+                                         <h4>and I am a</h4>
+                                         <h2>Web Developer</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Slider Captions -->
+
+                            <!-- Social Icons -->
+                            &nbsp;
+                            <!--
+                            <ul id="home-socials" class="social-icons">
+                                <li><a href="#"><i class="icon-facebook top"></i><i class="icon-facebook bottom"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter top"></i><i class="icon-twitter bottom"></i></a></li>
+                                <li><a href="#"><i class="icon-flickr top"></i><i class="icon-flickr bottom"></i></a></li>
+                                <li><a href="#"><i class="icon-pinterest top"></i><i class="icon-pinterest bottom"></i></a></li>
+                                <li><a href="#"><i class="icon-dribbble top"></i><i class="icon-dribbble bottom"></i></a></li>
+                            </ul>
+                            -->
+                            <!-- /Social Icons -->
+
+                            <!-- About Me navigation button -->
+                            <div class="arrow-down custom-navigate" data-destination="#about">
+                                <span>About Me</span>
+                            </div>
+                            <!-- /About Me navigation button -->
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </section>
+            <!--End of section home-->
+
+            <!--Begin section about-->
+            <section id="about" class="light-bg">
+                <div class="inner-wrapper">
+                    <div class="contain">
+
+                        <!-- Who I am  -->
+                        <div class="section dark-bg" id="bio-container" data-stellar-background-ratio="0.5">
+                            <div class="contents">
+                                <div class="container">
+                                    <div class="bio">
+                                        <div class="row">
+                                            <div class="col-md-6 col-md-offset-6">
+                                                <div class="left-heading">
+                                                    <h2>Who I am</h2>
+                                                </div>
+                                                
+                                                
+                                                <!-- Age, Location, Work -->
+                                                <div class="bio-circles">
+                                                    <ul>
+                                                        <li><div class="first">Based in</div><div class="second">Ternopil</div></li>
+                                                        <li><div class="first">Age</div><div class="second"><script>document.write(new Date().getFullYear()-1987)</script></div></li>
+                                                        <li><div class="first">Working at</div><div class="second">PrivatBank</div></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /Age, Location, Work -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <!-- /Who I am -->
+
+                        <!-- Experiences -->
+                        <div class="section lighter">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="center-heading">
+                                        <h2>Experiences</h2>
+                                    </div>
+                                    <ul class="exp-list row">
+                                        <!-- Experience Item -->
+                                        <li class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="com-logo col-md-4 col-sm-4">
+                                                    <img src="img/logo/privatbank.png" class="img-responsive" alt="img">
+                                                </div>
+                                                <div class="details col-md-8 col-sm-8">
+                                                    <div class="title">
+                                                        <div class="period">
+                                                            <span class="start">2011</span><span class="separator">--</span><span class="end">present</span>
+                                                        </div>
+                                                        <h3 class='title'>Software Engineer</h3>
+                                                    </div>
+                                                    <p class="description">
+                                                        Created management system for corporate linux OS, iOS MDM System, DHCP web-based management service,service for monitoring network printers.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- /Experience Item -->
+
+                                        <!-- Experience Item -->
+                                        <li class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="com-logo col-md-4 col-sm-4">
+                                                    <img src="img/logo/privatbank.png" class="img-responsive" alt="img">
+                                                </div>
+                                                <div class="details col-md-8 col-sm-8">
+                                                    <div class="title">
+                                                        <div class="period">
+                                                            <span class="start">2009</span><span class="separator">--</span><span class="end">2011</span>
+                                                        </div>
+                                                        <h3 class='title'>PHP Developer</h3>
+                                                    </div>
+                                                    <p class="description">
+                                                        Maintained servers, created system for utility bills, monitoring service for Puppet, services for logistics.
+                                                        <br />
+                                                        <br />
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- /Experience Item -->
+
+                                       
+
+                                        <!-- Experience Item -->
+                                        <li class="col-md-6 col-sm-6 ">
+                                            <div class="row">
+                                                <div class="com-logo col-md-4 col-sm-4">
+                                                    <img src="img/logo/tnpu.png" class="img-responsive" alt="img">
+                                                </div>
+                                                <div class="details col-md-8 col-sm-8">
+                                                    <div class="title">
+                                                        <div class="period">
+                                                            <span class="start">2008</span><span class="separator">--</span><span class="end">2009</span>
+                                                        </div>
+                                                        <h3 class='title'>Senior Laboratory Assistant</h3>
+                                                    </div>
+                                                    <p class="description">
+                                                        Maintained servers, learning system Moodle, created Moodle module for managing academic groups.
+                                                    </p>
+                                                </div>
+                                                    </div>
+                                        </li>
+                                        <!-- /Experience Item -->
+
+                                        <!-- Experience Item -->
+                                        <li class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="com-logo col-md-4 col-sm-4">
+                                                    <img src="img/logo/vmurol.png" class="img-responsive" alt="img">
+                                                </div>
+                                                <div class="details col-md-8 col-sm-8">
+                                                    <div class="title">
+                                                        <div class="period">
+                                                            <span class="start">2006</span><span class="separator">--</span><span class="end">2008</span>
+                                                        </div>
+                                                        <h3 class='title'>System Administrator</h3>
+                                                    </div>
+                                                    <p class="description">
+                                                        Maintained servers, client-bank software, learning system IBM Lotus.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- /Experience Item -->
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Experiences -->
+
+                       
+                    </div>
+                </div>
+            </section>
+            <!--End of section about-->
+
+            <!--Begin section skills-->
+            <section id="skills" class="dark-bg">
+                <div class="inner-wrapper">
+                    <div class="contain">
+
+                        <!-- Coding skills -->
+                        <div class="section">
+                            <div class="container">
+                                <div class="center-heading">
+                                    <h2>Programming Skills</h2>
+                                </div>
+
+                                <!-- Circular charts -->
+                                <div class="circular-bar">
+                                    <ul>
+                                        <!-- Circular chart item -->
+                                        <li class="chart-right">
+                                            <div class="chart" data-percent="90"><span>90%</span></div>
+                                            <div class="details">
+                                                <div class="title"><h4>PHP</h4></div>
+                                                <p>
+                                                    Laravel, Silex, MVC, Composer, Pear, Smarty
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!-- /Circular chart item -->
+
+                                        <!-- Circular chart item -->
+                                        <li>
+                                            <div class="chart" data-percent="75"><span>75%</span></div>
+                                            <div class="details">
+                                                <div class="title"><h4>HTML/CSS</h4>
+                                                </div>
+                                                <p>
+                                                    Bootstrap, Less, Sass
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!-- /Circular chart item -->
+
+                                        <!-- Circular chart item -->
+                                        <li class="chart-right">
+                                            <div class="chart" data-percent="70"><span>70%</span></div>
+                                            <div class="details">
+                                                <div class="title"><h4>DB</h4></div>
+                                                <p>
+                                                    MySQL, PostgreSQL, MongoDB
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!-- /Circular chart item -->
+
+                                        <!-- Circular chart item -->
+                                        <li>
+                                            <div class="chart" data-percent="65"><span>65%</span></div>
+                                            <div class="details">
+                                                <div class="title"><h4>JavaScript</h4></div>
+                                                <p>
+                                                    Node.js, jQuery, NPM
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!-- /Circular chart item -->
+
+                                        <!-- Circular chart item -->
+                                        <li class="chart-right">
+                                            <div class="chart" data-percent="40"><span>40%</span></div>
+                                            <div class="details">
+                                                <div class="title"><h4>Python/Ruby</h4></div>
+                                                <p>
+                                                    Django, Flask, RoR, Sinatra
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!-- /Circular chart item -->
+
+                                         <!-- Circular chart item -->
+                                        <li>
+                                            <div class="chart" data-percent="50"><span>50%</span></div>
+                                            <div class="details">
+                                                <div class="title"><h4>Other</h4></div>
+                                                <p>
+                                                    Git, Gearman, Linux, Apache, Nginx, DHCP
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!-- /Circular chart item -->
+
+                                    </ul>
+                                </div>
+                                <!-- /Circular charts -->
+
+                            </div>
+                        </div>
+                        <!-- /Coding skills -->
+
+                        <!-- Charactristics -->
+                        <div id="Characteristics" class="section" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="50%">
+                            <div class="contents">
+                                <div class="container">
+                                    <div class="center-heading">
+                                        <h2>Characteristics</h2>
+                                    </div>
+                                    <!-- Charactristics list -->
+                                    <ul class="list-center">
+                                        <li><i class="icon-ok"></i><h4>Communication</h4></li>
+                                        <li><i class="icon-ok"></i><h4>Responsibility</h4></li>
+                                        <li><i class="icon-ok"></i><h4>Positive work ethic</h4></li>
+                                        <li><i class="icon-ok"></i><h4>Reliability</h4></li>
+                                        <li><i class="icon-ok"></i><h4>Flexibility</h4></li>
+                                        <li><i class="icon-ok"></i><h4>Team oriented</h4></li>
+                                    </ul>
+                                    <!-- /Charactristics list -->
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <!-- /Charactristics -->
+
+                       
+                    </div>
+                </div>
+            </section>
+            <!--End of section skills-->
+
+
+            <!--Begin section contact-->
+            <section id="contact" class="dark-bg">
+                <div class="inner-wrapper">
+                    <div class="contain">
+                        <div class="section" id="gmapcontainer">
+
+                            <!-- Google map -->
+                            <div id="google">
+                                <div id="google-map"></div>
+                            </div>
+                            <!-- /Google map -->
+
+                            <!-- Contact Details -->
+                            <div class="contact-det">
+                                <div class="center-heading">
+                                    <h2>Contact Details</h2>
+                                </div>
+                                <!-- Contact details list -->
+                                <ul class="circle-icons">
+                                    <!-- Contact phone -->
+                                    <li><i class="icon-phone"></i>(380) 93 14 38 177</li>
+                                    <!-- /Contact phone -->
+
+                                    <!-- Contact address -->
+                                    <li><i class="icon-map-marker"></i>D. Halytskyi st., Ternopil, 46011</li>
+                                    <!-- /Contact address -->
+
+                                    <!-- Contact email -->
+                                    <li><i class="icon-envelope"></i>akaroot@akaroot.pro</li>
+                                    <!-- /Contact email -->
+                                </ul>
+                                <!-- Contact details list -->
+                            </div>
+                            <!-- Contact Details -->
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </section>
+            <!--End of section contact-->
+
+        </div>
+        <!--End of Main wrapper-->
+
+        <!--Begin Navigation-->
+        <div id="nav-container">
+            <ul id="nav" class="container">
+                <!-- Navigation item -->
+                <li data-page="#home" class="active">
+                    <a href="#home">
+                        <span class="top">Home</span>
+                        <span class="bottom">Home</span>
+                    </a>
+                </li>
+                <!-- /Navigation item -->
+
+                <!-- Navigation item -->
+                <li data-page="#about">
+                    <a href="#about">
+                        <span class="top">About</span>
+                        <span class="bottom">About</span>
+                    </a>
+                </li>
+                <!-- /Navigation item -->
+
+                <!-- Navigation item -->
+                <li data-page="#skills">
+                    <a href="#skills">
+                        <span class="top">Skills</span>
+                        <span class="bottom">Skills</span>
+                    </a>
+                </li>
+                <!-- /Navigation item -->
+
+
+
+                <!-- Navigation item -->
+                <li data-page="#contact">
+                    <a href="#contact">
+                        <span class="top">Contact</span>
+                        <span class="bottom">Contact</span>
+                    </a>
+                </li>
+                <!-- /Navigation item -->
+
+            </ul>
+        </div>
+        <!--End Navigation-->
+
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
+<script type="text/javascript" src="js/gmap3.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/ocanvas-2.5.1.min.js"></script>
+
+</body>
+
 </html>
