@@ -1,0 +1,132 @@
+{
+    "basics": {
+        "name": "Mykola Baran",
+        "label": "Web Developer",
+        "summary": "I’m a full stack web developer who loves working with open source technology. I work best at planning the architecture of web  applications and their development life cycles. I also love to get the community involved and have had much experience with building and organizing large open source groups.",
+        "email": "akaroot@akaroot.pro",
+        "location": {
+            "city": "Ternopil",
+            "countryCode": "UA"
+        },
+        "profiles": [
+
+        ]
+    },
+    "work": [
+        {
+            "startDate": "2011-06-01",
+            "position": "Software Engineer",
+            "company": "PrivatBank",
+            "website": "http://pb.ua",
+            "summary": "",
+            "highlights": [
+                "Created management system for corporate linux OS",
+                "iOS MDM System",
+                "DHCP web-based management service",
+                "Service for monitoring network printers"
+            ]
+        },
+        {
+            "startDate": "2009-10-01",
+            "endDate": "2011-06-01",
+            "position": "PHP Developer",
+            "company": "PrivatBank",
+            "website": "http://pb.ua",
+            "summary": "",
+            "highlights": [
+                "Created system for utility bills",
+                "Created monitoring service for Puppet",
+                "Created services for logistics",
+                "Maintained servers"
+            ]
+        },
+        {
+            "startDate": "2008-08-01",
+            "endDate": "2009-10-01",
+            "position": "Laboratory Assistant",
+            "company": "Ternopil National Pedagogical University",
+            "website": "http://tnpu.edu.ua",
+            "summary": "",
+            "highlights": [
+                "Created Moodle module for managing academic groups",
+                "Maintained servers",
+                "Support learning system Moodle"
+            ]
+        },
+        {
+            "startDate": "2006-12-01",
+            "endDate": "2008-09-01",
+            "position": "System Administrator",
+            "company": "Ternopil National Pedagogical University",
+            "website": "http://tnpu.edu.ua",
+            "summary": "",
+            "highlights": [
+                "Created Moodle module for managing academic groups",
+                "Maintained servers",
+                "Support learning system Moodle"
+            ]
+        }
+
+
+    ],
+    "education": [
+        {
+            "institution": "Ternopil National Pedagogical University",
+            "studyType": "M.S. degree",
+            "area": "computer engineering",
+            "startDate": "2004-09-01",
+            "endDate": "2009-07-01"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Frontend",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ]
+        },
+        {
+            "name": "Backend",
+            "keywords": [
+                "PHP",
+                "Ruby",
+                "Python",
+                "Node"
+            ]
+        },
+        {
+            "name": "Databases",
+            "keywords": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "name": "Other",
+            "keywords": [
+                "Git",
+                "Linux",
+                "Apache",
+                "Nginx",
+                "DHCP"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Ukrainian",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Intermediate"
+        },
+        {
+            "language": "Russian",
+            "fluency": "Near native"
+        },
+    ]
+}
