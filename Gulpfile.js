@@ -6,6 +6,7 @@ var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var runSequence = require('run-sequence');
 var shell = require('gulp-shell');
+var minifyHTML = require('gulp-minify-html');
 
 
 var config = {
@@ -76,6 +77,16 @@ gulp.task('styles', function() {
         .pipe( config.production  ? minifyCSS({keepBreaks:true, keepSpecialComments:0}) : gutil.noop() )
         .pipe(gulp.dest(destDir))
         .on('error', gutil.log);
+});
+
+
+gulp.task('html', function(){
+    var opts = {quotes:true,spare:true, cdata:true};
+
+    gulp.src(config.baseDir + '/' + 'index.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('./test.html'))
+    .on('error', gutil.log);
 });
 
 

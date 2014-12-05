@@ -8,6 +8,7 @@
         "gulp-rev": "",
         "gulp-shell": "",
         "gulp-uglify": "",
+        "gulp-minify-html":"",
 
         "del": "",
         "run-sequence": ""
