@@ -1,10 +1,3 @@
-/*
- *  Termé -Responsive Personal Portfolio Template Color Stylesheet
- *  owwwlab.com @2013
- *  owwwlab@gmail.com
- */
-
-
 /* General
  **************************************************/
  .btn-outline {
@@ -20,7 +13,7 @@
 a{
     color:#D0482B;
 }
-/* home 
+/* home
  **************************************************/
 
 #caption-carousel .caption h2{
@@ -57,9 +50,9 @@ a{
 }
 
 .vertical-bar li .bar{
-    background: #d0482b; 
-    background: -moz-linear-gradient(top,  #d0482b 1%, #9b2020 100%); 
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d0482b), color-stop(100%,#9b2020)); 
+    background: #d0482b;
+    background: -moz-linear-gradient(top,  #d0482b 1%, #9b2020 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d0482b), color-stop(100%,#9b2020));
     background: -webkit-linear-gradient(top,  #d0482b 1%,#9b2020 100%);
     background: -o-linear-gradient(top,  #d0482b 1%,#9b2020 100%);
     background: -ms-linear-gradient(top,  #d0482b 1%,#9b2020 100%);
@@ -104,7 +97,7 @@ a{
 	color: #D0482B;
 }
 
-/* Loader 
+/* Loader
 **************************************************/
 #preloader,#load-overlay {
 	background-color:#D0482B;

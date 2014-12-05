@@ -1,0 +1,15 @@
+{
+    "devDependencies": {
+        "gulp": "^3.8.8",
+        "gulp-util": "",
+        "gulp-jshint": "",
+        "gulp-concat": "",
+        "gulp-minify-css": "",
+        "gulp-rev": "",
+        "gulp-shell": "",
+        "gulp-uglify": "",
+
+        "del": "",
+        "run-sequence": ""
+    }
+}
