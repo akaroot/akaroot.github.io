@@ -1,9 +1,4 @@
 
-/*Begin custom.js file
-Termé -Responsive Personal Portfolio Template main JS file
- *  owwwlab.com @2013
- *  owwwlab@gmail.com
-----------------------------------------------*/
 (function($) {
     "use strict";
     // Author code here
@@ -68,7 +63,7 @@ Termé -Responsive Personal Portfolio Template main JS file
             });
         },
 
-        /*Navigate  
+        /*Navigate
         ----------------------------------------------*/
         navigate:function(demandPageID){
             pages.demandPage = pages.sections.filter(demandPageID);
@@ -77,7 +72,7 @@ Termé -Responsive Personal Portfolio Template main JS file
                 }
             pages.navLi.removeClass('active');
             pages.navLi.filter('[data-page="'+demandPageID+'"]').addClass('active');
-             
+
              pages.setup();
              pages.showDemand();
         },
@@ -99,7 +94,7 @@ Termé -Responsive Personal Portfolio Template main JS file
                 navObj = {},
                 paddingAnim = {},
                 scrollBar = self.currentPage.find('.ps-scrollbar-y-rail');
-            
+
             if (self.toTop) {
                 layerAnim = {'height': 0, ease: Power4.easeInOut};
                 navObj = {top: 0, ease: Power4.easeInOut};
@@ -162,12 +157,12 @@ Termé -Responsive Personal Portfolio Template main JS file
             }
             pages.navContainer.toggleClass('bottom');
             if(pages.toTop){
-                pages.navContainer.find('span').css('top','-16px'); 
+                pages.navContainer.find('span').css('top','-16px');
             }
             else{
-                pages.navContainer.find('span').css('top','0px'); 
+                pages.navContainer.find('span').css('top','0px');
             }
-           
+
             pages.toTop = !pages.toTop;
             pages.currentPage.removeClass('active').css({'z-index': 1}).hide();
             pages.currentPage.find('.contain').css({'padding-bottom': 0, 'padding-top': 0});
@@ -200,7 +195,7 @@ Termé -Responsive Personal Portfolio Template main JS file
             }
 
             self.navContainer.css(navObj);
-            
+
             //Updae scrollbar
             var innerWrapper=self.currentPage.find('.inner-wrapper');
             innerWrapper.perfectScrollbar('destroy');
@@ -220,7 +215,7 @@ Termé -Responsive Personal Portfolio Template main JS file
             if (self.toTop){
                 scrollBar.addClass('stick-top');
             }
-            
+
         },
         bindUiAction:function(){
             var self=this;
@@ -273,7 +268,7 @@ Termé -Responsive Personal Portfolio Template main JS file
                 $(this.el).find('span').text(Math.round(percent) + '%');
             }
         });
-        
+
         //Vertical bar charts
         var windowHeight=$(window).height(),
             elem=demandPage.find('.chart-container'),
@@ -287,7 +282,7 @@ Termé -Responsive Personal Portfolio Template main JS file
             context: demandPage.find('.inner-wrapper'),
             offset:elemOffset,
             triggerOnce: true
-        });    
+        });
     }
 
     /*Portfolio section elements
@@ -339,7 +334,7 @@ Termé -Responsive Personal Portfolio Template main JS file
                 box.removeClass('with-content');
                 box.append($(this).find('img').clone());
 
-            }    
+            }
         });
 
         //Portfolio magnifix popup //
@@ -420,7 +415,7 @@ Termé -Responsive Personal Portfolio Template main JS file
     $(":input[placeholder]").placeholder();
 
 
-    //Ajax contact form 
+    //Ajax contact form
     function submitContact() {
         var contactForm = $('form#contact-form');
 
@@ -436,7 +431,7 @@ Termé -Responsive Personal Portfolio Template main JS file
             var hasError = false,
                 ajaxError = false;
 
-            //form input validation     
+            //form input validation
             contactForm.find('.requiredField').each(function() {
                 if ($.trim($(this).val()) == '') {
                     var labelText = $(this).attr('placeholder');
@@ -539,7 +534,7 @@ Termé -Responsive Personal Portfolio Template main JS file
         windowHeight=pages.config.height-pages.config.navHeight,
         availableHeight=windowHeight-contentsHeight,
         scrollBar=homeSection.find('.ps-scrollbar-y-rail');
-        
+
         if (availableHeight>20){
             contents.css('margin-top',availableHeight/2);
         }else{
@@ -561,7 +556,7 @@ Termé -Responsive Personal Portfolio Template main JS file
 
         }else if(stat=='start'){
             $('#caption-carousel').trigger("play",true);
-            
+
         }else if(stat=='init'){
             var slideNumbers=slider.find('div').length;
             slider.find('div').each(function(){
@@ -589,7 +584,7 @@ Termé -Responsive Personal Portfolio Template main JS file
                     data.items.show();
                 },
                 scroll : {
-                    duration        : 1000,                         
+                    duration        : 1000,
                     pauseOnHover    : false,
                     fx:'fade',
                     onBefore:function(data){
@@ -603,13 +598,13 @@ Termé -Responsive Personal Portfolio Template main JS file
                         data.items.old.removeClass('visible-caption');
                         prevSlide=(prevSlide+1)%slideNumbers;
                     }
-                }        
+                }
             });
         }
     }
 
 
-    /*PreLoader 
+    /*PreLoader
     ----------------------------------------------*/
         function preLoader(){
         //Define Variables
@@ -623,7 +618,7 @@ Termé -Responsive Personal Portfolio Template main JS file
 
          //Core- Change load percentage on each image load
         totalImages.one('load',function(){
-            
+
             loaderCore();
             function loaderCore(){
                 loadedImagesNum=loadedImagesNum+1;
@@ -641,6 +636,12 @@ Termé -Responsive Personal Portfolio Template main JS file
         $(window).load(function(){
             TweenMax.to(overlay,2,{width:0,onComplete:function(){
                 hideLoader();
+
+                var page_id =  window.location.hash;
+                if( page_id != '' && pages.navLi.filter('[data-page="'+page_id+'"]').length != 0){
+                    pages.navigate(page_id);
+                }
+
             }});
         });
 
@@ -654,11 +655,11 @@ Termé -Responsive Personal Portfolio Template main JS file
                 .to($('#nav-container'),1.5,{top:0,ease: Power4.easeInOut,onStart:function(){homeCarousel('init');}},'-=1.5')
                 .from($('#profile'),1.5,{top:'-30px',opacity:0,ease: Power4.easeInOut},'-=1.2')
                 .from($('#home-socials'),1.5,{bottom:'-10px',opacity:0,ease: Power4.easeInOut},'-=1.2')
-                .from($('.arrow-down'),1.5,{scaleX:2, scaleY:2,top:'-50px',opacity:0,ease: Power4.easeInOut},'-=0.7');   
-            } 
+                .from($('.arrow-down'),1.5,{scaleX:2, scaleY:2,top:'-50px',opacity:0,ease: Power4.easeInOut},'-=0.7');
+            }
         }
     }
-    
+
 
     /*Reloading Site on window resize
     ----------------------------------------------*/
@@ -669,7 +670,7 @@ Termé -Responsive Personal Portfolio Template main JS file
 
 
     //Handle window resize
-    var resizeFlag=0;  
+    var resizeFlag=0;
     $(window).resize(function(){
         resizeFlag=1;
     })
@@ -685,7 +686,7 @@ Termé -Responsive Personal Portfolio Template main JS file
     }
 
 
-  
+
 
 })(jQuery);
 
