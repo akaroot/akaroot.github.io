@@ -3,7 +3,7 @@ all: pdf html
 test:
 	resume test
 pdf:
-	resume export -f pdf -t paper mykolabaran
+	resume export -f pdf -t kwan mykolabaran
 
 html:
 	resume export -f html -t elegant cv

@@ -93,7 +93,8 @@
                 "PHP",
                 "Ruby",
                 "Python",
-                "Node"
+                "Node",
+                "Go"
             ]
         },
         {
@@ -127,6 +128,6 @@
         {
             "language": "Russian",
             "fluency": "Near native"
-        },
+        }
     ]
 }
