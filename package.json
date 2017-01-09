@@ -1,16 +1,16 @@
 {
-    "devDependencies": {
-        "gulp": "^3.8.8",
-        "gulp-util": "",
-        "gulp-jshint": "",
-        "gulp-concat": "",
-        "gulp-minify-css": "",
-        "gulp-rev": "",
-        "gulp-shell": "",
-        "gulp-uglify": "",
-        "gulp-minify-html":"",
-
-        "del": "",
-        "run-sequence": ""
-    }
+  "devDependencies": {
+    "del": "",
+    "gulp": "^3.8.8",
+    "gulp-concat": "",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "",
+    "gulp-minify-html": "",
+    "gulp-rev": "",
+    "gulp-shell": "",
+    "gulp-uglify": "",
+    "gulp-util": "",
+    "jshint": "^2.9.4",
+    "run-sequence": ""
+  }
 }

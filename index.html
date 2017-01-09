@@ -113,7 +113,13 @@
                                                 <div class="bio-circles">
                                                     <ul>
                                                         <li><div class="first">Based in</div><div class="second">Ternopil</div></li>
-                                                        <li><div class="first">Age</div><div class="second"><script>document.write(new Date().getFullYear()-1987)</script></div></li>
+                                                        <li><div class="first">Age</div><div class="second">
+                                                          <script>
+                                                            var dateDiff = new Date().getTime()-new Date('April, 5, 1987').getTime();
+                                                            var age = new Date(dateDiff).getUTCFullYear() - 1970;
+                                                            document.write(age);
+                                                          </script>
+                                                        </div></li>
                                                         <li><div class="first">Working at</div><div class="second">PrivatBank</div></li>
                                                     </ul>
                                                 </div>
